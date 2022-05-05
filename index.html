@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+ <head>
+
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance calculator</title>
+    
+    <link rel="stylesheet" href="freelanceMoney.css"
+
+    
+
+ </head>
+  
+   
+
+  <header>
+    <h1>Freelance calculator</h1>
+  </header>
+  
+  <body id="background">
+    <script>freelanceMoney.js</script>
+
+    <!-- Monpremier block  ici les prix -->
+    <form class="formCalcul shado" id="FormCalculGain">
+      <div class="sectionCalcul pricing">
+        
+        <fieldset class="form-container shado2">
+          <legend>Vos tarifs</legend>
+          
+          <div class="form-field">
+            <label>TH</label>
+            <input name="th" type="number" placeholder="Ex:70" />
+          </div>
+          
+          <div class="form-field">
+            <label>TJM</label>
+            <input name="tjm" type="number" placeholder="Ex:200" />
+          </div>
+
+          <div class="form-field">
+            <label>EXTRA</label>
+            <input name="extra" type="number" placeholder="Ex:50" />
+          </div>
+        </fieldset>
+      </div>
+      <!-- Mon 2em block -->
+      <div class="sectionCalcul pricing">
+        
+        <fieldset class="form-container shado2">
+          <legend>Vos quantitée</legend>
+
+          <div class="form-field">
+            <label>QTH</label>
+            <input name="qteTh" type="number" placeholder="Ex:70" />
+          </div>
+          
+          <div class="form-field">
+            <label>QTJM</label>
+            <input name="qteTjm" type="number" placeholder="Ex:200" />
+          </div>
+
+          <div class="form-field">
+            <label>QEXTRA</label>
+            <input name="qteextra" type="number" placeholder="Ex:50" />
+          </div>
+        </fieldset>
+      </div>
+      <!-- mon 3em block -->
+      <div class="sectionCalcul pricing">
+      
+        <fieldset class="form-container charge" id="tax">
+          <legend>Charges</legend>
+
+          <div>
+            <input name="charge" type="number" placeholder="Ex:5%" />
+
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="sectionCalcul validation">
+        <button onclick="CalculGain()" type="button" class="Green3D">Calculer</button>
+      </div>
+
+        <fieldset class="sectionCalcul result shado1 " >
+          <legend>Vos résultat</legend>
+      
+          <div class="form-field" id="colorRed">
+            <p>brut </p>
+            <span class="résultaBrut"> 0€</span>
+          </div>
+          <div class="form-field" id="colorRed">
+            <p>brut </p>
+            <span class="Tax"> 0€</span>
+          </div>
+          
+          <div class="form-field" id="colorRed">
+            <p>brut </p>
+            <span class="résultaNet"> 0€</span>
+          </div>
+        
+        </fieldset>
+      </div>
+
+    </form>
+
+  </body>
+</html>
