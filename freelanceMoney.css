@@ -144,7 +144,7 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   border: 50px;
-  border-color: #131101;
+  border-color: #fb8fa0;;
   background: transparent;
   position: relative;
   transition: all .2s;
@@ -274,7 +274,7 @@ background-repeat: no-repeat;
 .sectionCalcul.result {
 
   margin-bottom: 20px;
-  border-color: blue
+  border-color: rgb(255, 242, 0)
   background-image: url(images/marbre.jpg);
 }
 
