@@ -50,10 +50,10 @@ transform: scale(1) ;
 
 }
 
-
-
- 
-
+label {
+color: #740726;
+font-size: 15px;
+}
 
 
 #background {
@@ -92,7 +92,7 @@ flex-wrap: wrap;
 
 #tax {
 
-width: 250px;
+width: 200px;
 
 }
 
@@ -101,14 +101,12 @@ width: 250px;
   width: 250px;
 display: flex;
 align-content: center;
-  
 
 }
 
 .formCalcul.shado  {
 
   display: flex;
-  
   background-image: url(images/marbre.jpg);
   width: 600px;
   height: 720px;
@@ -123,17 +121,14 @@ align-content: center;
   border-right-color: rgb(243, 105, 98);
   border-bottom-color: rgb(243, 105, 98);
   border-left-color: rgb(243, 105, 98);
-
   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow:  1px 1px 350px 1px #e9e0e5;
 }
 
 legend {
 
- 
   font-size: 25px;
   color: #ae0a0f;
-  
 
 }
 
@@ -196,6 +191,7 @@ button:hover {
 
 #text {
 
+  vertical-align: auto;
   font-size: 50px; font-family: Georgia;color: #953e3c; font-weight: bold; text-decoration:overlineline-through;text-shadow: 0 0 20px #fefcc9, 10px - 10px 30px #feec85, -20px - 20px 40px #ffae34, 20px - 40px 50px #ec760c, -20px - 60px 60px #cd4606, 0 - 80px 70px #973716, 10px - 90px 80px #451b0e; text - align:center; line - height:250px; margin - top:50px; 
 
 }
@@ -208,11 +204,11 @@ width: 3px;
 input {
  
 
-  border-color: #f36962;
+border-color: #f36962;
 border-radius: 8px;
-width: 100px;
-height: 25px;
-margin-left: 3px ;
+width: 80px;
+height: 18px;
+margin-left: 3px ;s
 
 
 }
@@ -243,13 +239,9 @@ margin-left: 3px ;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
-
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 2px 2px 40px 2px #f36563;
    
-
-
 }
 
 .sectionCalcul {
@@ -269,7 +261,6 @@ margin-left: 3px ;
 background-color: rgb(251 143 160);
 border-radius: 10px;
 background-repeat: no-repeat;
-
 
 }
 
@@ -312,8 +303,46 @@ border-left-color: red;
 
     .radio {
     width: 20px;
+    height: 15;
 
     }
  
 
+span {
 
+  color: red;
+
+}
+
+
+.résultaNet {
+
+ font-size: 20px;
+height: 25px;
+color: green;
+
+}
+
+.Tax {
+
+font-size: 20px;
+height: 25px;
+color: red;
+
+}
+
+
+.résultaBrut {
+
+font-size: 20px;
+height: 25px;
+color: #ae0a0f;
+
+}
+
+.buttonRadio {
+
+width: 80px;
+height: 15PX;
+
+}
