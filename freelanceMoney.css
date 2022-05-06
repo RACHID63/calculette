@@ -107,12 +107,11 @@ align-content: center;
 
 .formCalcul.shado  {
 
-
   display: flex;
   
   background-image: url(images/marbre.jpg);
   width: 600px;
-  height: 700px;
+  height: 720px;
   border: solid 3px;
   border-radius: 25px;
   flex-direction: column;
