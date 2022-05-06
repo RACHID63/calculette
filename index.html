@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
  <head>
+
   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freelance calculator</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="stylesheet" href="freelanceMoney.css"
+  <link rel="stylesheet" href="freelanceMoney.css"
+    
 
  </head>
+  
+   
+
   <header>
     <h1>Freelance calculator</h1>
   </header>
   
   <body id="background">
-    <script>freelanceMoney.js</script>
+  <script>freelanceMoney.js</script>
 
     <!-- Monpremier block  ici les prix -->
-    <form class="formCalcul shado" id="FormCalculGain">
+  <form class="formCalcul shado" id="FormCalculGain">
       <div class="sectionCalcul pricing">
         
         <fieldset class="form-container shado2">
@@ -26,10 +31,10 @@
           
           <div class="form-field">
             <label>TH</label>
-          <div class="infoBulle0">
-taux horaire €
-          </div >
-          <input  name="th" type="number" placeholder="Ex:70" />
+            <div class="infoBulle0">
+          taux horaire €
+            </div >
+            <input  name="th" type="number" placeholder="Ex:70" />
           </div>
           
           <div class="form-field">
@@ -44,7 +49,7 @@ taux horaire €
             <label>EXTRA</label>
             <div class="infoBulle0">
               Tarif extra €
-             </div >
+                          </div >
             <input name="extra" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
@@ -75,7 +80,7 @@ taux horaire €
             <label>QEXTRA</label>
             <div class="infoBulle0">
               Nb extras
-            </div >
+          </div >
             <input name="qteextra" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
@@ -86,10 +91,11 @@ taux horaire €
         <fieldset class="form-container charge" id="tax">
           <legend>Charges</legend>
 
-          <div>
-            <input name="charge" type="number" placeholder="Ex:5%" />
+        <p><input type="radio" name="charge" value="5,5">charge 5,50%</p>
+        <p><input type="radio" name="charge" value="10,5">charge 10,50%</p>
+        <p><input type="radio" name="charge" value="22">charge 22%</p>
 
-          </div>
+          
         </fieldset>
       </div>
 

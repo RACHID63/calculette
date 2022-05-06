@@ -92,12 +92,13 @@ flex-wrap: wrap;
 
 #tax {
 
-width: 100px;
+width: 250px;
 
 }
 
 .tax {
 
+  width: 250px;
 display: flex;
 align-content: center;
   
@@ -225,6 +226,7 @@ margin-left: 3px ;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
+  
 }
 
 .form-field {
@@ -264,9 +266,11 @@ margin-left: 3px ;
 
 .form-container.charge {
 
+  width: 250px;
 background-color: rgb(251 143 160);
 border-radius: 10px;
 background-repeat: no-repeat;
+
 
 }
 
@@ -306,6 +310,11 @@ border-left-color: red;
     border-bottom-color: green;
     border-left-color: green;
     } 
+
+    .radio {
+    width: 20px;
+
+    }
  
 
 
