@@ -90,11 +90,7 @@ flex-wrap: wrap;
    
 }
 
-#tax {
 
-width: 200px;
-
-}
 
 .tax {
 
@@ -204,8 +200,9 @@ width: 3px;
 input {
  
 
-border-color: #f36962;
-border-radius: 8px;
+border-color: rgb(243, 105, 98);
+
+border-radius: 5px;
 width: 80px;
 height: 18px;
 margin-left: 3px ;s
@@ -254,16 +251,20 @@ margin-left: 3px ;s
   justify-content: center;
 }
 
+.form-container.charge.span {
 
-.form-container.charge {
-
-  width: 250px;
-background-color: rgb(251 143 160);
+fonte-size: 20 px 
+width: 400px: 
 border-radius: 10px;
 background-repeat: no-repeat;
 
 }
 
+#colorblue {
+
+text-emphasis-color: blue;
+
+}
 
 .sectionCalcul.result {
 
@@ -291,7 +292,6 @@ border-left-color: red;
   border-left-color: blue;
   } 
 
-
 #colorGreen {
     color: rgb(6, 115, 29);
     border-color: green;
@@ -308,13 +308,6 @@ border-left-color: red;
     }
  
 
-span {
-
-  color: red;
-
-}
-
-
 .résultaNet {
 
  font-size: 20px;
@@ -325,12 +318,18 @@ color: green;
 
 .Tax {
 
+border-radius: 8px;
 font-size: 20px;
 height: 25px;
 color: red;
 
 }
 
+.form-container {
+
+  border-radius: 8px;
+
+}
 
 .résultaBrut {
 
@@ -344,5 +343,82 @@ color: #ae0a0f;
 
 width: 75px;
 height: 12PX;
+
+}
+
+p {
+
+font-size:20px;
+text-align:left;
+
+}
+
+#resultaBrut {
+color: blue;
+border: solid 3px;
+margin: 5px;
+ padding: 10px;
+
+}
+
+#resultaNet {
+  
+color: green;  
+border: solid 3px;
+margin: 5px;
+padding: 10px;
+  
+}
+
+#Adeduire {
+color: rgb(116, 8, 30);
+  border: solid 3px;
+  margin: 5px;
+  padding: 10px;
+
+}
+
+
+.form-field {
+
+  text-align: center;
+
+}
+
+#textColorResultaBrut {
+text-align: center;
+color:blue ;
+
+}
+
+#textColorAdeduire {
+  
+text-align: center;
+color: rgb(116, 8, 30);
+
+}
+
+#textColorResultaNet {
+  text-align: center;
+  color: green;
+
+}
+
+@media screen  and  (max-width: 400px) {
+
+  .h1 {
+width: 10px;
+
+  }
+
+  .body {
+
+flex-direction: column;
+align-items: center;
+  }
+ 
+  .form {
+    width:100% 
+  };
 
 }

@@ -13,12 +13,23 @@ function CalculGain() {
   let extras = formObj.get("extras");
   let qtetauxHauraire = formObj.get("qteTh");
   let qtetauxjournalier = formObj.get("qteTjm");
-  let qteextras = formObj.get("qteExtras");
+  let qteExtras = formObj.get("qtExtras");
 
-  let charge = formObj.get("charge");
+  let charges = formObj.get("charges");
 
   //le calcul
 
   let gainHeure = tauxHauraire * qtetauxHauraire;
+  let gainJour = tauxjournalier * qtetauxjournalier;
+  let gainExtras = extras * qteExtras;
+
+  let totalBrut = gainHeure + gainJour + gainExtras;
+
+  let chargeADeduire = (totalBrut * charges) / 100;
+
+  let totalNet = totalBrut - chargeADeduire;
+
+  document.getElementById("resultaBrut").innerText = totalBrut.toFixed(2) + "€";
+  document.getElementById("Adeduire").innerText = chargeADeduire.toFixed(2) + "€";
+  document.getElementById("resultaNet").innerText = totalNet.toFixed(2) + "€";
 }
-alert(gainHeure);

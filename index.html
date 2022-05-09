@@ -1,8 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
-
- <head>
+<head>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,20 +9,17 @@
     
   <link rel="stylesheet" href="freelanceMoney.css"
     
-
+  
  </head>
   
-   
-
   <header>
     <h1>Freelance calculator</h1>
   </header>
   
   <body id="background">
-  <script>freelanceMoney.js</script>
-
+    
     <!-- Monpremier block  ici les prix -->
-  <form class="formCalcul shado" id="FormCalculGain">
+    <form class="formCalcul shado" id="FormCalculGain" >
       <div class="sectionCalcul pricing">
         
         <fieldset class="form-container shado2">
@@ -32,16 +28,16 @@
           <div class="form-field">
             <label>TH</label>
             <div class="infoBulle0">
-          taux horaire €
+              taux horaire €
             </div >
             <input  name="th" type="number" placeholder="Ex:70" />
           </div>
-          
+    
           <div class="form-field">
             <label>TJM</label>
             <div class="infoBulle0">
               taux journalier €
-                          </div >
+            </div >
             <input name="tjm" type="number" placeholder="Ex:200" />
           </div>
 
@@ -50,13 +46,13 @@
             <div class="infoBulle0">
               Tarif extra €
                           </div >
-            <input name="extra" type="number" placeholder="Ex:50" />
+            <input name="extras" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
       </div>
       <!-- Mon 2em block -->
       <div class="sectionCalcul pricing">
-      
+        
         <fieldset class="form-container shado2">
           <legend>Vos quantitée</legend>
 
@@ -75,55 +71,56 @@
             </div >
             <input name="qteTjm" type="number" placeholder="Ex:200" />
           </div>
-
+          
           <div class="form-field">
             <label>QEXTRA</label>
             <div class="infoBulle0">
               Nb extras
-          </div >
-            <input name="qteextra" type="number" placeholder="Ex:50" />
+            </div >
+            <input name="qtExtras" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
       </div>
       <!-- mon 3em block -->
       <div class="sectionCalcul pricing">
-      
-        <fieldset class="form-container charge" id="tax">
-          <legend>Charges</legend>
-
-        <p><input type="radio" name="charge" value="5,5">charge 5,50%</p>
-        <p><input type="radio" name="charge" value="10,5">charge 10,50%</p>
-        <p><input type="radio" name="charge" value="22">charge 22%</p>
-
+        
+        <fieldset class="form-container charges" id="taxes">
+          <legend >Charges</legend>
+          
+          <p><input class="buttonRadio" type="radio" name="charges" value="5,5"><span>charge 5,50%  Autre</span> </p>
+          <p><input class="buttonRadio" type="radio" name="charges" value="12,80"> <span>charge 12,80%  Vente de marchandises</span> </p>
+          <p><input class="buttonRadio" type="radio" name="charges" value="22"><span>charge 22%  Vente de services</span></p>
           
         </fieldset>
       </div>
-
+      
       <div class="sectionCalcul validation">
         <button onclick="CalculGain()" type="button" class="Green3D">Calculer</button>
       </div>
-
-        <fieldset class="sectionCalcul result shado1 " >
-          <legend>Vos résultat</legend>
       
-          <div class="form-field" id="colorRed">
-            <p>brut </p>
-            <span class="résultaBrut"> 0€</span>
-          </div>
-          <div class="form-field" id="colorRed">
-            <p>brut </p>
-            <span class="Tax"> 0€</span>
-          </div>
-          
-          <div class="form-field" id="colorRed">
-            <p>brut </p>
-            <span class="résultaNet"> 0€</span>
-          </div>
+      <fieldset class="sectionCalcul result shado1 " >
+        <legend>Vos résultat</legend>
         
-        </fieldset>
+        <div class="form-field1" id="colorRed">
+          
+          <p id="textColorResultaBrut">Brut </p>
+          <span id="resultaBrut">0€</span>
+        </div>
+        <div class="form-field2" id="colorRed">
+          <p id="textColorAdeduire">Taxes </p>
+          <span id="Adeduire">0€</span>
+        </div>
+        
+        <div class="form-field3" id="colorRed">
+          <p id="textColorResultaNet">Net</p>
+          <span id="resultaNet"> 0€</span>
+        </div>
+        
+      </fieldset>
       </div>
-
+      
     </form>
 
+    <script src="freelanceMoney.js"></script>
   </body>
 </html>
