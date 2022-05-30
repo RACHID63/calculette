@@ -30,6 +30,21 @@ function CalculGain() {
   let totalNet = totalBrut - chargeADeduire;
 
   document.getElementById("resultaBrut").innerText = totalBrut.toFixed(2) + "€";
-  document.getElementById("Adeduire").innerText = chargeADeduire.toFixed(2) + "€";
+  document.getElementById("Adeduire").innerText =
+    chargeADeduire.toFixed(2) + "€";
   document.getElementById("resultaNet").innerText = totalNet.toFixed(2) + "€";
 }
+
+//Ajout des évènements
+let btn = document.getElementById("buttonValidation");
+btn.addEventListener("click", CalculGain);
+
+let mesInputs = document.querySelectorAll(
+  "#formCalculGain input.form-control "
+);
+
+mesInputs.forEach((monInput) => {
+  monInput.addEventListener("keyup", CalculGain);
+  monInput.addEventListener("change", CalculGain);
+});
+CalculGain();

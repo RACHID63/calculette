@@ -30,7 +30,7 @@
             <div class="infoBulle0">
               taux horaire €
             </div >
-            <input  name="th" type="number" placeholder="Ex:70" />
+            <input class="form-control"  name="th" type="number" placeholder="Ex:70" />
           </div>
     
           <div class="form-field">
@@ -38,7 +38,7 @@
             <div class="infoBulle0">
               taux journalier €
             </div >
-            <input name="tjm" type="number" placeholder="Ex:200" />
+            <input class="form-control" name="tjm" type="number" placeholder="Ex:200" />
           </div>
 
           <div class="form-field">
@@ -46,7 +46,7 @@
             <div class="infoBulle0">
               Tarif extra €
                           </div >
-            <input name="extras" type="number" placeholder="Ex:50" />
+            <input class="form-control" name="extras" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
       </div>
@@ -61,7 +61,7 @@
             <div class="infoBulle0">
               Nb heures 
             </div >
-            <input name="qteTh" type="number" placeholder="Ex:70" />
+            <input class="form-control" name="qteTh" type="number" placeholder="Ex:70" />
           </div>
           
           <div class="form-field">
@@ -69,7 +69,7 @@
             <div class="infoBulle0">
               Nb jours
             </div >
-            <input name="qteTjm" type="number" placeholder="Ex:200" />
+            <input class="form-control" name="qteTjm" type="number" placeholder="Ex:200" />
           </div>
           
           <div class="form-field">
@@ -77,7 +77,7 @@
             <div class="infoBulle0">
               Nb extras
             </div >
-            <input name="qtExtras" type="number" placeholder="Ex:50" />
+            <input class="form-control" name="qtExtras" type="number" placeholder="Ex:50" />
           </div>
         </fieldset>
       </div>
@@ -87,15 +87,15 @@
         <fieldset class="form-container charges" id="taxes">
           <legend >Charges</legend>
           
-          <p><input class="buttonRadio" type="radio" name="charges" value="5.5"><span>charge 5,50%  Autre</span> </p>
-          <p><input class="buttonRadio" type="radio" name="charges" value="12.80"> <span>charge 12,80%  Vente de marchandises</span> </p>
+          <p><input  class="buttonRadio" type="radio" name="charges" value="5.5"><span>charge 5,50%  Autre</span> </p>
+          <p><input  class="buttonRadio" type="radio" name="charges" value="12.80"> <span>charge 12,80%  Vente de marchandises</span> </p>
           <p><input class="buttonRadio" type="radio" name="charges" value="22"><span>charge 22%  Vente de services</span></p>
           
         </fieldset>
       </div>
       
       <div class="sectionCalcul validation">
-        <button onclick="CalculGain()" type="button" class="Green3D">Calculer</button>
+        <button id="buttonValidation"  type="button" class="Green3D">Calculer</button>
       </div>
       
       <fieldset class="sectionCalcul result shado1 " >
