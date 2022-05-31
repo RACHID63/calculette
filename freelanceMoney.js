@@ -39,9 +39,7 @@ function CalculGain() {
 let btn = document.getElementById("buttonValidation");
 btn.addEventListener("click", CalculGain);
 
-let mesInputs = document.querySelectorAll(
-  "#formCalculGain input.form-control "
-);
+let mesInputs = document.querySelectorAll(" input.form-control ");
 
 mesInputs.forEach((monInput) => {
   monInput.addEventListener("keyup", CalculGain);
